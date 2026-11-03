@@ -1,12 +1,15 @@
 # Game Design Skill
 
+[![Package checks](https://github.com/kristianrolando/game-design-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/kristianrolando/game-design-skill/actions/workflows/ci.yml)
+[![MIT License](https://img.shields.io/badge/License-MIT-315b43?style=flat-square)](LICENSE)
+
 One router skill for analyzing and developing game designs. Give it a concept, feature spec, pitch deck, GDD, prototype notes or playtest feedback; it gathers missing context, picks the most relevant design lenses, and returns a prioritized report with minimal fixes and next steps.
 
 Works as a Claude Code plugin or direct skill, as a Codex skill, and in other agents that read `SKILL.md` files. The skill text is host-neutral. See [compatibility](#compatibility).
 
 ## Quick start
 
-**Before publication** (from a local checkout of this folder):
+**From a local checkout** of this repository:
 
 | Host | Route |
 | --- | --- |
@@ -15,7 +18,7 @@ Works as a Claude Code plugin or direct skill, as a Codex skill, and in other ag
 | Codex and other `.agents/skills/` hosts | Copy `skills/game-design-skill` to your project's `.agents/skills/` |
 | Any agent with file access | Ask it to read `skills/game-design-skill/SKILL.md` and follow it |
 
-**After publication** at `kristianrolando/game-design-skill` (planned, not live yet):
+**From GitHub** ([kristianrolando/game-design-skill](https://github.com/kristianrolando/game-design-skill)). These routes point at the public repository but have not yet been verified end to end; no release is tagged yet:
 
 ```text
 /plugin marketplace add kristianrolando/game-design-skill

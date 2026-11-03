@@ -2,7 +2,7 @@
 
 ## Publication status
 
-Not published. The folder is a local Git repository on `main`; no remote exists yet, nothing is installed globally, and no tag or release exists. The planned public repository is `kristianrolando/game-design-skill`; change it everywhere listed in step 0 if a different name is chosen.
+Public repository: [kristianrolando/game-design-skill](https://github.com/kristianrolando/game-design-skill), created and first pushed by the maintainer on 2026-11-03. No tag or release exists yet, and nothing is installed globally. If the repository is ever renamed, update the names listed in step 0.
 
 ## Publication checklist
 
@@ -10,10 +10,12 @@ Steps marked **(maintainer)** need an explicit decision or approval from the mai
 
 ### 0. Decisions (maintainer)
 
-- [ ] Confirm the repository name and visibility. Default: public `kristianrolando/game-design-skill`. The name appears in `.github/workflows/release.yml` (publish guard), README install routes and, after publication, `plugin.json`.
-- [ ] Confirm the first release version. Default: `v0.1.0`, matching `plugin.json`.
-- [ ] Confirm the marketplace. Default: a separate `game-design-tools` catalog, not merged with `cross-agent-tools`.
-- [ ] Confirm which hosts README claims. Default: documented routes for the hosts in [hosts.md](hosts.md), with live evidence recorded only where a trial actually ran.
+The maintainer accepted these defaults on 2026-11-03 by approving phase 3.
+
+- [x] Repository name and visibility: public `kristianrolando/game-design-skill`. The name appears in `.github/workflows/release.yml` (publish guard), README install routes, docs/hosts.md and `plugin.json`.
+- [x] First release version: `v0.1.0`, matching `plugin.json`.
+- [x] Marketplace: a separate `game-design-tools` catalog, not merged with `cross-agent-tools`.
+- [x] Host claims: documented routes for the hosts in [hosts.md](hosts.md), with live evidence recorded only where a trial actually ran.
 
 ### 1. Repository files (local)
 
@@ -22,7 +24,8 @@ Steps marked **(maintainer)** need an explicit decision or approval from the mai
 - [x] `docs/`: architecture, validation, CI, file map, hosts, this runbook, and `releases/v0.1.0.md`.
 - [x] README: local and post-publication install routes, compatibility table, documentation table.
 - [x] Tests for release notes, workflows, file map and ignore rules.
-- [ ] After publication: add `homepage` and `repository` to `plugin.json`, add CI, license and release badges to README, and add a test that the URLs match.
+- [x] After publication: `homepage` and `repository` in `plugin.json`, CI and license badges in README, and a test that the URLs match the release guard.
+- [ ] After the first release: a release badge in README.
 - [ ] Optional: responsive README banner SVGs, as in `cross-agent-handoff/docs/assets/`.
 
 ### 2. Local validation
@@ -39,9 +42,9 @@ Results and limits are recorded in [validation.md](validation.md).
 ### 3. Repository (maintainer)
 
 - [x] `git init -b main`, review `git status`, first commit.
-- [ ] Create the GitHub repository with the chosen visibility and push `main`. Never force-push.
-- [ ] Set topics: `agent-skills`, `claude-code`, `codex`, `game-design`, `ai-agents`.
-- [ ] Inspect the first hosted Package checks run and fix actual failures.
+- [x] Create the GitHub repository with the chosen visibility and push `main`. Never force-push. Done by the maintainer; the agent session's permission guard refused to create a public repository.
+- [x] Set topics: `agent-skills`, `claude-code`, `codex`, `game-design`, `ai-agents`.
+- [x] Inspect the first hosted Package checks run and fix actual failures. [Run 41560385711](https://github.com/kristianrolando/game-design-skill/actions/runs/41560385711): all four jobs passed.
 
 ### 4. Release (maintainer)
 
@@ -51,7 +54,7 @@ Results and limits are recorded in [validation.md](validation.md).
 
 ### 5. Workspace
 
-- [ ] Add the repository URL to the `game-design-skill/` row in the workspace `AGENTS.md`.
+- [x] Add the repository URL to the `game-design-skill/` row in the workspace `AGENTS.md`.
 
 ## Release workflow
 

@@ -4,7 +4,7 @@ Evidence is grouped by kind. Automated checks, model trials and host checks prov
 
 ## Automated checks
 
-`python3 -m unittest discover -s tests -v` passes locally (see HANDOFF.md for the latest count and date). What the suite covers is listed in [ci.md](ci.md). Hosted CI has not run because the repository is not published.
+`python3 -m unittest discover -s tests -v` passes locally (see HANDOFF.md for the latest count and date). What the suite covers is listed in [ci.md](ci.md). Hosted CI passed on all four jobs (Ubuntu with Python 3.9 and 3.13, macOS, Windows) in the [first run](https://github.com/kristianrolando/game-design-skill/actions/runs/41560385711) on commit `79591ac`. The reference-bundle overlap test is skipped there.
 
 ## Model trials
 

@@ -1,6 +1,6 @@
 # Automated checks
 
-The GitHub Actions workflow at `.github/workflows/ci.yml` runs on pushes, pull requests and manual dispatch, with read-only permissions, no persisted checkout credentials, cancellation of superseded runs, and a ten-minute timeout per job. It has not run yet because the repository is not published.
+The GitHub Actions workflow at `.github/workflows/ci.yml` runs on pushes, pull requests and manual dispatch, with read-only permissions, no persisted checkout credentials, cancellation of superseded runs, and a ten-minute timeout per job. All four jobs passed in the [first hosted run](https://github.com/kristianrolando/game-design-skill/actions/runs/41560385711) on commit `79591ace3fbaa375d3ed9805a749838581f3bd99`. The badge and Actions history show later results.
 
 ## Matrix
 

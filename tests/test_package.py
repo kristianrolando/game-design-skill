@@ -132,6 +132,13 @@ class PluginTests(unittest.TestCase):
         self.assertTrue((ROOT / market['plugins'][0]['source'] / '.claude-plugin/plugin.json').is_file())
         self.assertTrue(market['owner']['name'])
 
+    def test_plugin_urls_match_release_repository(self):
+        plugin = json.loads((ROOT / '.claude-plugin/plugin.json').read_text(encoding='utf-8'))
+        release = (ROOT / '.github/workflows/release.yml').read_text(encoding='utf-8')
+        repo = re.search(r"github\.repository == '([^']+)'", release)[1]
+        self.assertEqual(plugin['repository'], 'https://github.com/' + repo)
+        self.assertEqual(plugin['homepage'], 'https://github.com/' + repo + '#readme')
+
     def test_license_travels_with_standalone_skill(self):
         root_license = (ROOT / 'LICENSE').read_text(encoding='utf-8')
         self.assertEqual((SKILL / 'LICENSE').read_text(encoding='utf-8'), root_license)
