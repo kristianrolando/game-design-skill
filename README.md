@@ -2,6 +2,7 @@
 
 [![Package checks](https://github.com/kristianrolando/game-design-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/kristianrolando/game-design-skill/actions/workflows/ci.yml)
 [![MIT License](https://img.shields.io/badge/License-MIT-315b43?style=flat-square)](LICENSE)
+[![v0.1.0](https://img.shields.io/badge/Release-v0.1.0-a15d3e?style=flat-square)](https://github.com/kristianrolando/game-design-skill/releases/tag/v0.1.0)
 
 One router skill for analyzing and developing game designs. Give it a concept, feature spec, pitch deck, GDD, prototype notes or playtest feedback; it gathers missing context, picks the most relevant design lenses, and returns a prioritized report with minimal fixes and next steps.
 
@@ -18,7 +19,7 @@ Works as a Claude Code plugin or direct skill, as a Codex skill, and in other ag
 | Codex and other `.agents/skills/` hosts | Copy `skills/game-design-skill` to your project's `.agents/skills/` |
 | Any agent with file access | Ask it to read `skills/game-design-skill/SKILL.md` and follow it |
 
-**From GitHub** ([kristianrolando/game-design-skill](https://github.com/kristianrolando/game-design-skill)). These routes point at the public repository but have not yet been verified end to end; no release is tagged yet:
+**From GitHub** ([kristianrolando/game-design-skill](https://github.com/kristianrolando/game-design-skill)). Both routes were verified against the public repository ([evidence](docs/evidence/public-routes-2026-11-03.md)):
 
 ```text
 /plugin marketplace add kristianrolando/game-design-skill
@@ -72,7 +73,7 @@ Recorded trials, unedited:
 
 | Host / component | Route | Evidence and limits |
 | --- | --- | --- |
-| **Claude Code** | Included plugin or direct skill | Plugin and marketplace manifests validate; the plugin loads from disk and exposes the skill (CLI 2.1.287). A model session with the plugin was not observed: the CLI sign-in had expired. A Claude subagent followed the skill via explicit file reads in two trials. |
+| **Claude Code** | Included plugin or direct skill | Manifests validate; the GitHub marketplace adds, the plugin installs and exposes the skill, and the Skills CLI copies the skill into `.claude/skills/` (CLI 2.1.287). A model session with the plugin was not observed: the CLI sign-in had expired. A Claude subagent followed the skill via explicit file reads in two trials. |
 | **Codex** | Direct skill; optional `agents/openai.yaml` metadata | Codex CLI 0.166 discovered the project-local skill and produced a report in the template. |
 | **Antigravity, Cursor, Gemini CLI, GitHub Copilot, OpenCode, Cline** | Direct skill in the [documented folders](docs/hosts.md) | Documented routes only; not exercised for this package. |
 | Other filesystem agents | Explicitly read `SKILL.md` | Portable fallback; native discovery not verified. |

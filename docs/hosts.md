@@ -19,17 +19,17 @@ No single folder reaches every host: `.agents/skills/` serves Codex, Antigravity
 
 ## Claude Code plugin
 
-The repository root is a Claude Code plugin with its own marketplace catalog (`game-design-tools`). Before publication:
+The repository root is a Claude Code plugin with its own marketplace catalog (`game-design-tools`). From a local checkout:
 
 ```sh
 claude --plugin-dir /path/to/game-design-skill
 ```
 
-loads the plugin for one session without installing it. `/plugin marketplace add /path/to/game-design-skill` followed by `/plugin install game-design-skill@game-design-tools` installs it at user scope. After publication, the marketplace can be added as `kristianrolando/game-design-skill`. The plugin wrapper is Claude-specific; other hosts use the direct skill.
+loads the plugin for one session without installing it. `/plugin marketplace add /path/to/game-design-skill` followed by `/plugin install game-design-skill@game-design-tools` installs it at user scope. From GitHub, add the marketplace as `kristianrolando/game-design-skill`; pass `--scope project` or `--scope local` to declare it for one project only. The plugin wrapper is Claude-specific; other hosts use the direct skill.
 
 ## Installer option
 
-After publication, the public Skills CLI (Node.js 22.20+) can copy the skill into a chosen host's folder:
+The public Skills CLI (Node.js 22.20+) can copy the skill into a chosen host's folder:
 
 ```sh
 npx skills add kristianrolando/game-design-skill --skill game-design-skill

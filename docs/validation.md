@@ -24,10 +24,14 @@ See [host-checks-2026-11-03.md](evidence/host-checks-2026-11-03.md). Summary:
 - Codex: native discovery from `.agents/skills/` and skill use were observed.
 - Antigravity, Cursor, Gemini CLI, GitHub Copilot, OpenCode and Cline: documented routes only ([hosts.md](hosts.md)); not exercised.
 
+## Public install routes and release
+
+See [public-routes-2026-11-03.md](evidence/public-routes-2026-11-03.md). The Skills CLI installed identical copies for Claude Code and Codex; the GitHub marketplace added, installed and exposed the plugin at local scope; tag `v0.1.0` produced the GitHub release through the release workflow.
+
 ## Content provenance
 
 With the reference bundle present locally, the suite confirms no 10-word passage is shared with it. A manual 7-word scan during authoring found five generic phrases, which were reworded. This check does not run in CI.
 
 ## Not established
 
-Advice quality on real projects, behavior across many runs or models, marketplace and public install routes, user-scope installs, and hosts not listed above.
+Advice quality on real projects, behavior across many runs or models, a Claude Code model session using the installed plugin, user-scope installs, and hosts not listed above.

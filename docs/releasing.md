@@ -2,7 +2,8 @@
 
 ## Publication status
 
-Public repository: [kristianrolando/game-design-skill](https://github.com/kristianrolando/game-design-skill), created and first pushed by the maintainer on 2026-11-03. No tag or release exists yet, and nothing is installed globally. If the repository is ever renamed, update the names listed in step 0.
+Public repository: [kristianrolando/game-design-skill](https://github.com/kristianrolando/game-design-skill), created and first pushed by the maintainer on 2026-11-03.
+Latest release: [v0.1.0](https://github.com/kristianrolando/game-design-skill/releases/tag/v0.1.0) ([notes](releases/v0.1.0.md)), annotated tag on verified commit `9c9c2b1c9af82920e063d75be632f04e45286201`. Keep the tag frozen there; later documentation updates go on main without moving it. If the repository is ever renamed, update the names listed in step 0.
 
 ## Publication checklist
 
@@ -25,7 +26,7 @@ The maintainer accepted these defaults on 2026-11-03 by approving phase 3.
 - [x] README: local and post-publication install routes, compatibility table, documentation table.
 - [x] Tests for release notes, workflows, file map and ignore rules.
 - [x] After publication: `homepage` and `repository` in `plugin.json`, CI and license badges in README, and a test that the URLs match the release guard.
-- [ ] After the first release: a release badge in README.
+- [x] After the first release: a release badge in README.
 - [ ] Optional: responsive README banner SVGs, as in `cross-agent-handoff/docs/assets/`.
 
 ### 2. Local validation
@@ -48,9 +49,14 @@ Results and limits are recorded in [validation.md](validation.md).
 
 ### 4. Release (maintainer)
 
-- [ ] In a disposable project, verify the public routes: `/plugin marketplace add kristianrolando/game-design-skill` and `npx skills add kristianrolando/game-design-skill --skill game-design-skill`.
-- [ ] Push tag `v0.1.0` on the verified commit. The release workflow checks the tag against `plugin.json`, requires `docs/releases/v0.1.0.md`, runs the tests and creates the GitHub Release.
-- [ ] Record the repository, CI run and release links in HANDOFF.md, validation.md and this file.
+- [x] In a disposable project, verify the public routes: `/plugin marketplace add kristianrolando/game-design-skill` and `npx skills add kristianrolando/game-design-skill --skill game-design-skill`. See [public-routes-2026-11-03.md](evidence/public-routes-2026-11-03.md).
+- [x] Push tag `v0.1.0` on the verified commit. The release workflow checks the tag against `plugin.json`, requires `docs/releases/v0.1.0.md`, runs the tests and creates the GitHub Release. [Run 41561103985](https://github.com/kristianrolando/game-design-skill/actions/runs/41561103985) passed.
+- [x] Record the repository, CI run and release links in HANDOFF.md, validation.md and this file.
+
+### Still open
+
+- [ ] Claude Code model session with the plugin, and direct skill discovery from `.claude/skills/` (blocked on CLI sign-in; see phase 2).
+- [ ] Optional: responsive README banner SVGs.
 
 ### 5. Workspace
 
