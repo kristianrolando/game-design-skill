@@ -4,6 +4,7 @@
 
 Public repository: [kristianrolando/game-design-skill](https://github.com/kristianrolando/game-design-skill), created and first pushed by the maintainer on 2026-11-03.
 Latest release: [v0.1.0](https://github.com/kristianrolando/game-design-skill/releases/tag/v0.1.0) ([notes](releases/v0.1.0.md)), annotated tag on verified commit `9c9c2b1c9af82920e063d75be632f04e45286201`. Keep the tag frozen there; later documentation updates go on main without moving it. If the repository is ever renamed, update the names listed in step 0.
+In preparation: v0.1.1 ([notes](releases/v0.1.1.md)), committed locally on main and not yet pushed or tagged. See "Next version: v0.1.1" below.
 
 ## Publication checklist
 
@@ -56,6 +57,14 @@ Results and limits are recorded in [validation.md](validation.md).
 ### Still open
 
 Nothing in this checklist. Further work (real-project trials, untested lenses, more hosts) is quality work, not publication.
+
+### Next version: v0.1.1
+
+- [x] Tighten the Deliverable rule in SKILL.md, bump `plugin.json` to 0.1.1, add `docs/releases/v0.1.1.md` and its file-map row.
+- [x] Codex regression and baseline runs recorded in [regression-v0.1.1-2026-11-03.md](evidence/regression-v0.1.1-2026-11-03.md); validation.md updated.
+- [ ] Claude Code rerun of the Gravekeeper's Garden diagnose input under v0.1.1 (blocked by the account's session limit on 2026-11-03). Record the result in the regression evidence and validation.md, and adjust the release notes if the fix does not hold.
+- [ ] **(maintainer)** Push main, check hosted CI, then push tag `v0.1.1` on the verified commit and confirm the release workflow.
+- [ ] After publication: update the README release badge, the publication status above, HANDOFF.md and validation.md with the run and release links.
 
 ### 5. Workspace
 

@@ -18,8 +18,9 @@
 | docs/hosts.md | Installation locations and activation per host |
 | docs/releasing.md | Publication checklist and release workflow |
 | docs/releases/v0.1.0.md | Notes for the first release |
+| docs/releases/v0.1.1.md | Notes for the Deliverable-rule fix release |
 | docs/examples/*.md | Recorded model trials with their inputs and limits |
-| docs/evidence/*.md | Host loading and discovery checks |
+| docs/evidence/*.md | Host loading, install route and regression checks |
 | docs/assets/*.svg | Editable README banner, wide and narrow layouts |
 | AGENTS.md | Canonical contributor rules for any agent |
 | CLAUDE.md | Claude Code contributor adapter importing AGENTS.md |
