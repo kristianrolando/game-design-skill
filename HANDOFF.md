@@ -1,7 +1,7 @@
 # Project handoff
 
 - format: cross-agent-handoff/1
-- task_status: in_progress
+- task_status: done
 - handoff: ready
 - writer: none
 
@@ -14,13 +14,13 @@ Design: docs/architecture.md. Evidence: docs/validation.md. Hosts: docs/hosts.md
 Publication checklist and release history: docs/releasing.md.
 
 ## Task
-Prepare v0.1.2: make develop requests keep the full report around the requested artifact (Codex returned
-the document alone), record regression evidence, then publish when the maintainer approves push and tag.
+Release v0.1.2: make develop requests keep the full report around the requested artifact (Codex returned
+the document alone), record regression evidence, and publish. Done; the maintainer approved push and tag.
 Checklist: "Next version: v0.1.2" in docs/releasing.md. (v0.1.0 and v0.1.1 are published.)
 
 ## State
-Public repository on main with topics, plugin URLs, CI, license and release badges. Release v0.1.1 (Latest)
-is published from annotated tag v0.1.1 on 35b6daa; v0.1.0 stays on 9c9c2b1. Both tags stay frozen. Later documentation commits on main
+Public repository on main with topics, plugin URLs, CI, license and release badges. Release v0.1.2 (Latest)
+is published from annotated tag v0.1.2 on 328d11b; v0.1.1 stays on 35b6daa and v0.1.0 on 9c9c2b1. All tags stay frozen. Later documentation commits on main
 record evidence only and do not change the released skill.
 
 Both public install routes were verified in disposable projects: the Skills CLI copied identical skill
@@ -57,7 +57,7 @@ included; asking for an artifact is not a format switch; the artifact sits under
 section kept around it. plugin.json is 0.1.2; docs/releases/v0.1.2.md and its file-map row exist. Regression
 runs: docs/evidence/regression-v0.1.2-2026-11-03.md. Three Codex develop runs of Lantern Post kept the full
 report (previously 0 of 3); one Claude develop run kept it; one diagnose run per host left Deliverable out.
-Minor Codex drift: one omitted Lens column, two put lens names inside findings. Committed locally, not pushed.
+Minor Codex drift: one omitted Lens column, two put lens names inside findings. Published as v0.1.2.
 
 Nothing installed at user scope. No background writers.
 
@@ -75,11 +75,12 @@ Nothing installed at user scope. No background writers.
 - Model trials: two Claude subagent trials, one Codex CLI trial, and five Claude Code CLI trials (plugin,
   direct skill, and three lens trials) in docs/examples. All nine lens families covered.
 - v0.1.2 regression runs: docs/evidence/regression-v0.1.2-2026-11-03.md (same hosts and models).
+- v0.1.2: hosted CI run 41601006450 passed all four jobs on 328d11b; release workflow run 41601696343
+  passed checks and publish; release v0.1.2 targets 328d11b and is marked Latest.
 - Limits: single runs; trial concepts are invented; six hosts are documented routes only.
 
 ## Next
-With maintainer approval: push main, check hosted CI, push annotated tag v0.1.2 on that commit, check the
-release workflow, then record links (README badge, releasing.md, validation.md, this file).
+No release work remains. Check hosted CI for the post-release documentation commit.
 Later quality work: review a real design from the maintainer; repeated runs to measure format drift.
 Never move a published tag.
 
@@ -95,3 +96,4 @@ Never move a published tag.
 - 2026-11-03: Claude Code reruns after the limit reset: no Deliverable in v0.1.1 or baseline.
 - 2026-11-03: Published release v0.1.1 from tag v0.1.1 on 35b6daa; CI and release workflow passed.
 - 2026-11-03: Prepared v0.1.2 (full report in develop mode); 3 of 3 Codex develop runs kept the report.
+- 2026-11-03: Published release v0.1.2 from tag v0.1.2 on 328d11b; CI and release workflow passed.

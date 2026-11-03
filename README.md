@@ -16,7 +16,7 @@
 
 [![Package checks](https://github.com/kristianrolando/game-design-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/kristianrolando/game-design-skill/actions/workflows/ci.yml)
 [![MIT License](https://img.shields.io/badge/License-MIT-315b43?style=flat-square)](LICENSE)
-[![v0.1.1](https://img.shields.io/badge/Release-v0.1.1-a15d3e?style=flat-square)](https://github.com/kristianrolando/game-design-skill/releases/tag/v0.1.1)
+[![v0.1.2](https://img.shields.io/badge/Release-v0.1.2-a15d3e?style=flat-square)](https://github.com/kristianrolando/game-design-skill/releases/tag/v0.1.2)
 
 **A design review from a senior game designer, packaged as one agent skill.** Share a concept, feature spec, pitch deck, GDD, prototype notes or playtest feedback. The skill fills in missing context, picks the design lenses that fit your question, and returns a prioritized report with minimal fixes and next steps.
 
