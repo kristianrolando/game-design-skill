@@ -3,8 +3,7 @@
 ## Publication status
 
 Public repository: [kristianrolando/game-design-skill](https://github.com/kristianrolando/game-design-skill), created and first pushed by the maintainer on 2026-11-03.
-Latest release: [v0.1.0](https://github.com/kristianrolando/game-design-skill/releases/tag/v0.1.0) ([notes](releases/v0.1.0.md)), annotated tag on verified commit `9c9c2b1c9af82920e063d75be632f04e45286201`. Keep the tag frozen there; later documentation updates go on main without moving it. If the repository is ever renamed, update the names listed in step 0.
-In preparation: v0.1.1 ([notes](releases/v0.1.1.md)), committed locally on main and not yet pushed or tagged. See "Next version: v0.1.1" below.
+Latest release: [v0.1.1](https://github.com/kristianrolando/game-design-skill/releases/tag/v0.1.1) ([notes](releases/v0.1.1.md)), annotated tag on verified commit `35b6daafb3b5932031b101fbbc53fc9681fdff29`. Previous: [v0.1.0](https://github.com/kristianrolando/game-design-skill/releases/tag/v0.1.0) on `9c9c2b1`. Keep both tags frozen; later documentation updates go on main without moving them. If the repository is ever renamed, update the names listed in step 0.
 
 ## Publication checklist
 
@@ -63,8 +62,8 @@ Nothing in this checklist. Further work (real-project trials, untested lenses, m
 - [x] Tighten the Deliverable rule in SKILL.md, bump `plugin.json` to 0.1.1, add `docs/releases/v0.1.1.md` and its file-map row.
 - [x] Codex regression and baseline runs recorded in [regression-v0.1.1-2026-11-03.md](evidence/regression-v0.1.1-2026-11-03.md); validation.md updated.
 - [x] Claude Code reruns of the Gravekeeper's Garden diagnose input after the session limit reset: two under v0.1.1 and a v0.1.0 baseline, none with a Deliverable section. The baseline did not reproduce the deviation, so the evidence shows no regression rather than proof of the fix.
-- [ ] **(maintainer)** Push main, check hosted CI, then push tag `v0.1.1` on the verified commit and confirm the release workflow.
-- [ ] After publication: update the README release badge, the publication status above, HANDOFF.md and validation.md with the run and release links.
+- [x] **(maintainer)** Pushed main; [hosted CI](https://github.com/kristianrolando/game-design-skill/actions/runs/41590763914) passed on all four jobs for `35b6daa`. Pushed annotated tag `v0.1.1` on that commit; [release workflow](https://github.com/kristianrolando/game-design-skill/actions/runs/41590841216) passed checks and publish.
+- [x] After publication: README release badge, publication status above, HANDOFF.md and validation.md updated.
 
 ### 5. Workspace
 

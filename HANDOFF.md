@@ -1,7 +1,7 @@
 # Project handoff
 
 - format: cross-agent-handoff/1
-- task_status: in_progress
+- task_status: done
 - handoff: ready
 - writer: none
 
@@ -14,14 +14,13 @@ Design: docs/architecture.md. Evidence: docs/validation.md. Hosts: docs/hosts.md
 Publication checklist and release history: docs/releasing.md.
 
 ## Task
-Prepare release v0.1.1: tighten the Deliverable rule in SKILL.md so diagnose and decide reports never add a
-Deliverable section, record regression evidence, and commit locally. The maintainer asked for a local commit
-only; pushing, tagging and publishing need a separate request. Open items: "Next version: v0.1.1" in
-docs/releasing.md. (v0.1.0 publication, the earlier task, is done.)
+Release v0.1.1: tighten the Deliverable rule in SKILL.md so diagnose and decide reports never add a
+Deliverable section, record regression evidence, and publish. Done; the maintainer approved push and tag.
+Checklist: "Next version: v0.1.1" in docs/releasing.md. (v0.1.0 publication, the earlier task, is done.)
 
 ## State
-Public repository on main with topics, plugin URLs, CI, license and release badges. Release v0.1.0 is
-published from annotated tag v0.1.0 on 9c9c2b1; that tag stays frozen. Later documentation commits on main
+Public repository on main with topics, plugin URLs, CI, license and release badges. Release v0.1.1 (Latest)
+is published from annotated tag v0.1.1 on 35b6daa; v0.1.0 stays on 9c9c2b1. Both tags stay frozen. Later documentation commits on main
 record evidence only and do not change the released skill.
 
 Both public install routes were verified in disposable projects: the Skills CLI copied identical skill
@@ -41,7 +40,7 @@ Forge, Echo Rooms) exercised emotional direction, motivation and prototyping, so
 been loaded. Prompts did not name lenses; the router loaded the intended lens first each time. One deviation:
 a diagnosis request produced a Deliverable section (router reserves it for develop requests).
 
-v0.1.1 in progress, committed locally on main and not pushed or tagged: SKILL.md now allows only the template
+v0.1.1 published: SKILL.md now allows only the template
 sections, puts answers to the user's questions in the Summary, and limits Deliverable to artifact requests;
 plugin.json is 0.1.1; docs/releases/v0.1.1.md and its file-map row exist. Regression runs:
 docs/evidence/regression-v0.1.1-2026-11-03.md. Six Codex runs (v0.1.1 and a v0.1.0 baseline) showed no
@@ -62,6 +61,8 @@ Nothing installed at user scope. No background writers.
   Claude Code CLI 2.1.287, claude-opus-5-5).
 - Hosted CI passed on all four jobs for 79591ac (run 41560385711) and 9c9c2b1 (run 41560556115).
 - Release workflow run 41561103985 passed checks and publish; release v0.1.0 targets 9c9c2b1.
+- v0.1.1: hosted CI run 41590763914 passed all four jobs on 35b6daa; release workflow run 41590841216
+  passed checks and publish; release v0.1.1 targets 35b6daa and is marked Latest.
 - Public routes: docs/evidence/public-routes-2026-11-03.md. Local host checks:
   docs/evidence/host-checks-2026-11-03.md.
 - Model trials: two Claude subagent trials, one Codex CLI trial, and five Claude Code CLI trials (plugin,
@@ -69,10 +70,9 @@ Nothing installed at user scope. No background writers.
 - Limits: single runs; trial concepts are invented; six hosts are documented routes only.
 
 ## Next
-1. With the maintainer's approval: push main, check hosted CI, push tag v0.1.1, confirm the release workflow,
-   then update the README badge, releasing.md status, validation.md and this file.
-2. Later quality work: make develop mode keep the report around the deliverable in Codex; review a real
-   design from the maintainer. Never move a published tag.
+No release work remains. Check hosted CI for the post-release documentation commit.
+Later quality work: make develop mode keep the report around the deliverable in Codex; review a real
+design from the maintainer. Never move a published tag.
 
 ## Recent outcomes
 - 2026-11-03: Created game-design-skill v0.1.0 with nine lenses, tests and a recorded trial.
@@ -83,4 +83,5 @@ Nothing installed at user scope. No background writers.
 - 2026-11-03: Claude Code plugin and direct-skill model sessions passed after re-sign-in.
 - 2026-11-03: Trials for emotional direction, motivation and prototyping; all nine lenses now exercised.
 - 2026-11-03: Prepared v0.1.1 (Deliverable rule) with Codex regression evidence; local commit, not pushed.
-- 2026-11-03: Claude Code reruns after the limit reset: no Deliverable in v0.1.1 or baseline; recorded locally.
+- 2026-11-03: Claude Code reruns after the limit reset: no Deliverable in v0.1.1 or baseline.
+- 2026-11-03: Published release v0.1.1 from tag v0.1.1 on 35b6daa; CI and release workflow passed.

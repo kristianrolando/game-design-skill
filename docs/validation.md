@@ -4,7 +4,7 @@ Evidence is grouped by kind. Automated checks, model trials and host checks prov
 
 ## Automated checks
 
-`python3 -m unittest discover -s tests -v` passes locally (see HANDOFF.md for the latest count and date). What the suite covers is listed in [ci.md](ci.md). Hosted CI passed on all four jobs (Ubuntu with Python 3.9 and 3.13, macOS, Windows) in the [first run](https://github.com/kristianrolando/game-design-skill/actions/runs/41560385711) on commit `79591ac`. The reference-bundle overlap test is skipped there.
+`python3 -m unittest discover -s tests -v` passes locally (see HANDOFF.md for the latest count and date). What the suite covers is listed in [ci.md](ci.md). Hosted CI passed on all four jobs (Ubuntu with Python 3.9 and 3.13, macOS, Windows) in the [first run](https://github.com/kristianrolando/game-design-skill/actions/runs/41560385711) on commit `79591ac` and for the v0.1.1 release commit `35b6daa` ([run](https://github.com/kristianrolando/game-design-skill/actions/runs/41590763914)). The reference-bundle overlap test is skipped there.
 
 ## Model trials
 
@@ -39,7 +39,7 @@ See [host-checks-2026-11-03.md](evidence/host-checks-2026-11-03.md). Summary:
 
 ## Public install routes and release
 
-See [public-routes-2026-11-03.md](evidence/public-routes-2026-11-03.md). The Skills CLI installed identical copies for Claude Code and Codex; the GitHub marketplace added, installed and exposed the plugin at local scope; tag `v0.1.0` produced the GitHub release through the release workflow.
+See [public-routes-2026-11-03.md](evidence/public-routes-2026-11-03.md). The Skills CLI installed identical copies for Claude Code and Codex; the GitHub marketplace added, installed and exposed the plugin at local scope; tag `v0.1.0` produced the GitHub release through the release workflow, and tag `v0.1.1` produced the v0.1.1 release ([run](https://github.com/kristianrolando/game-design-skill/actions/runs/41590841216)).
 
 ## Content provenance
 
