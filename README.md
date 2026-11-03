@@ -120,6 +120,9 @@ Full, unedited trial records:
 - [FTUE review of a deckbuilder prototype](docs/examples/ftue-review-ember-pact-codex.md) (Codex CLI, native skill discovery).
 - [Social design review of a co-op survival concept](docs/examples/social-review-raft-rally-claude-plugin.md) (Claude Code plugin).
 - [One-page design doc for a cozy narrative concept](docs/examples/one-page-gdd-lantern-post-claude-skill.md) (Claude Code direct skill, develop mode).
+- [Emotional direction review of a cozy-horror farming concept](docs/examples/emotional-direction-gravekeepers-garden-claude.md), [crafting adoption review of a live mobile RPG](docs/examples/motivation-guild-forge-claude.md) and [prototype plan for a VR voice puzzle game](docs/examples/prototyping-plan-echo-rooms-claude.md) (Claude Code direct skill).
+
+Together the trials load all nine lens families at least once.
 
 ## Compatibility
 

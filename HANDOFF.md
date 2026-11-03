@@ -34,8 +34,11 @@ light and dark; the picture source switch was confirmed on the live cross-agent-
 
 After the maintainer signed in to the Claude Code CLI, both blocked checks passed: a session with the plugin
 via --plugin-dir and a session with the direct skill in .claude/skills (examples Raft Rally and Lantern Post).
-The publication checklist has no open items. Six of nine lens families have been exercised; emotional
-direction, motivation and prototyping have not.
+The publication checklist has no open items. Three further Claude Code trials (Gravekeeper's Garden, Guild
+Forge, Echo Rooms) exercised emotional direction, motivation and prototyping, so all nine lens families have
+been loaded. Prompts did not name lenses; the router loaded the intended lens first each time. One deviation:
+a diagnosis request produced a Deliverable section (router reserves it for develop requests). Not fixed;
+it is a candidate wording change in SKILL.md for a future version.
 
 On this machine the active gh account is EternalCloverStudio; the repository belongs to kristianrolando.
 Use `GH_TOKEN=$(gh auth token --user kristianrolando)` per command rather than switching the active account.
@@ -47,13 +50,13 @@ Nothing installed at user scope. No background writers.
 - Release workflow run 41561103985 passed checks and publish; release v0.1.0 targets 9c9c2b1.
 - Public routes: docs/evidence/public-routes-2026-11-03.md. Local host checks:
   docs/evidence/host-checks-2026-11-03.md.
-- Model trials: two Claude subagent trials, one Codex CLI trial, and two Claude Code CLI trials (plugin and
-  direct skill) in docs/examples.
+- Model trials: two Claude subagent trials, one Codex CLI trial, and five Claude Code CLI trials (plugin,
+  direct skill, and three lens trials) in docs/examples. All nine lens families covered.
 - Limits: single runs; trial concepts are invented; six hosts are documented routes only.
 
 ## Next
-No release work remains. Suggested quality work: review a real design from the maintainer, and exercise the
-emotional direction, motivation and prototyping lenses. Future changes start from actual Git status; a new
+No release work remains. Suggested quality work: review a real design from the maintainer; decide whether to
+tighten the Deliverable rule in SKILL.md (would need a version bump and new release). Future changes start from actual Git status; a new
 version needs a manifest bump, new release notes and a new tag, never a moved tag.
 
 ## Recent outcomes
@@ -63,3 +66,4 @@ version needs a manifest bump, new release notes and a new tag, never a moved ta
 - 2026-11-03: Verified public install routes and published release v0.1.0.
 - 2026-11-03: Redesigned the README with responsive banner artwork and a Mermaid flow (19 tests pass).
 - 2026-11-03: Claude Code plugin and direct-skill model sessions passed after re-sign-in.
+- 2026-11-03: Trials for emotional direction, motivation and prototyping; all nine lenses now exercised.

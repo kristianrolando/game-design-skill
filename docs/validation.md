@@ -15,8 +15,13 @@ Evidence is grouped by kind. Automated checks, model trials and host checks prov
 | 2026-11-03 | Codex CLI 0.166, `gpt-6.1-sol`, native project skill discovery | FTUE review with playtest notes | FTUE, flow | [Ember Pact](examples/ftue-review-ember-pact-codex.md) |
 | 2026-11-03 | Claude Code CLI 2.1.287, `claude-opus-5-5`, plugin via `--plugin-dir` | Social design review | Multiplayer and social, flow | [Raft Rally](examples/social-review-raft-rally-claude-plugin.md) |
 | 2026-11-03 | Claude Code CLI 2.1.287, `claude-opus-5-5`, direct skill in `.claude/skills/` | One-page design doc (develop mode) | Pitch and GDD, core loop, scoping | [Lantern Post](examples/one-page-gdd-lantern-post-claude-skill.md) |
+| 2026-11-03 | Claude Code CLI 2.1.287, `claude-opus-5-5`, direct skill | Emotional direction question | Emotional direction, core loop, prototyping | [Gravekeeper's Garden](examples/emotional-direction-gravekeepers-garden-claude.md) |
+| 2026-11-03 | Claude Code CLI 2.1.287, `claude-opus-5-5`, direct skill | Feature adoption and audience question | Motivation, core loop, flow | [Guild Forge](examples/motivation-guild-forge-claude.md) |
+| 2026-11-03 | Claude Code CLI 2.1.287, `claude-opus-5-5`, direct skill | What to prototype first | Prototyping, scoping, core loop | [Echo Rooms](examples/prototyping-plan-echo-rooms-claude.md) |
 
-Lens coverage across trials: six of nine lens families have been loaded (core loop, flow, FTUE, multiplayer and social, pitch and GDD, scoping). Emotional direction, motivation and prototyping have not been exercised yet.
+Lens coverage across trials: all nine lens families have been loaded at least once. In the last three trials the prompts described symptoms without naming a lens, and the router loaded the intended lens first each time.
+
+One deviation was observed: in the Gravekeeper's Garden diagnosis, the report added a `Deliverable` section with a proposed tone guide, although the router reserves Deliverable for develop requests.
 
 Observed across the trials: the router's intake rule, lens selection, confidence labels, severity table, minimal fixes with checks, develop-mode Deliverable section, and the unprompted ethics flag all appeared as specified. The concepts were written for the trials, so the findings are design reasoning, not evidence about real players. Each trial is a single run.
 
@@ -38,4 +43,4 @@ With the reference bundle present locally, the suite confirms no 10-word passage
 
 ## Not established
 
-Advice quality on real projects, behavior across many runs or models, a model session with the plugin installed through the marketplace (the session used `--plugin-dir`), three untested lens families, user-scope installs, and hosts not listed above.
+Advice quality on real projects, behavior across many runs or models, a model session with the plugin installed through the marketplace (the session used `--plugin-dir`), user-scope installs, and hosts not listed above.
