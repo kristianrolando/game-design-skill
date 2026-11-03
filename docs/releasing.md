@@ -72,6 +72,13 @@ Nothing in this checklist. Further work (real-project trials, untested lenses, m
 - [x] **(maintainer)** Pushed main; [hosted CI](https://github.com/kristianrolando/game-design-skill/actions/runs/41601006450) passed on all four jobs for `328d11b`. Pushed annotated tag `v0.1.2` on that commit; [release workflow](https://github.com/kristianrolando/game-design-skill/actions/runs/41601696343) passed checks and publish.
 - [x] After publication: README release badge, publication status above, HANDOFF.md and validation.md updated.
 
+### Repository profile
+
+- [x] Issue forms (`.github/ISSUE_TEMPLATE/`), SECURITY.md and CODE_OF_CONDUCT.md.
+- [x] Social preview image `docs/assets/social-preview.png` (1280×640), rendered from `readme-hero.svg` with headless Chrome.
+- [ ] **(maintainer)** Upload the social preview in Settings → General → Social preview. GitHub has no API for it.
+- [ ] **(maintainer)** Disable the empty Wiki, set the homepage to the skills.sh listing, and enable private vulnerability reporting, which SECURITY.md relies on.
+
 ### 5. Workspace
 
 - [x] Add the repository URL to the `game-design-skill/` row in the workspace `AGENTS.md`.

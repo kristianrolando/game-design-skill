@@ -11,6 +11,7 @@
 | .github/workflows/ci.yml | Package checks on Linux, macOS and Windows |
 | .github/workflows/release.yml | Tag-triggered release with version and notes checks |
 | .github/pull_request_template.md | Change, validation and content review template |
+| .github/ISSUE_TEMPLATE/*.yml | Bug report and lens or feature request forms; blank issues off, security reports routed privately |
 | tests/test_package.py | Standard-library package integrity checks |
 | docs/architecture.md | Router design, lens grouping, report format and provenance decisions |
 | docs/validation.md | Evidence by kind and what it does not establish |
@@ -23,9 +24,12 @@
 | docs/examples/*.md | Recorded model trials with their inputs and limits |
 | docs/evidence/*.md | Host loading, install route and regression checks |
 | docs/assets/*.svg | Editable README banner, wide and narrow layouts |
+| docs/assets/social-preview.png | 1280×640 repository social preview rendered from the wide banner; uploaded by hand in repository settings |
 | AGENTS.md | Canonical contributor rules for any agent |
 | CLAUDE.md | Claude Code contributor adapter importing AGENTS.md |
 | CONTRIBUTING.md | Shared human and agent contribution workflow |
+| SECURITY.md | Supported versions and private vulnerability reporting |
+| CODE_OF_CONDUCT.md | Conduct expectations and enforcement contact |
 | HANDOFF.md | Current project checkpoint |
 | README.md | User-facing overview, installation and credits |
 | LICENSE | MIT license for the repository |

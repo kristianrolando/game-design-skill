@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://github.com/kristianrolando/game-design-skill/security/advisories/new
+    about: Report a security problem privately, not in a public issue.
+  - name: Host installation guide
+    url: https://github.com/kristianrolando/game-design-skill/blob/main/docs/hosts.md
+    about: Check install locations and activation per host before filing a loading bug.

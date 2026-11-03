@@ -1,0 +1,41 @@
+name: Bug report
+description: The skill did not load, broke the report format, or gave advice that ignores its own rules.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Remove confidential design material before posting. Paste only what is needed to show the problem.
+  - type: input
+    id: host
+    attributes:
+      label: Host and version
+      description: For example Claude Code 2.1.287 (plugin or direct skill), Codex CLI 0.166, Cursor.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Skill version
+      description: Release tag or commit you installed.
+      placeholder: v0.1.2
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: What you asked
+      description: The prompt, and a short description of the material you shared.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened
+      description: Paste the relevant part of the output, or describe the loading error.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: Point to the rule in SKILL.md or a lens file it broke, if you know it.

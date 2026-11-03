@@ -1,0 +1,23 @@
+name: Lens or feature request
+description: Propose a new check, lens family, host route or report change.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Design problem
+      description: What question can the skill not answer well today? Give a concrete example.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Which lens file or rule would change, and how. New lens families need a clear gap that the nine existing ones do not cover.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Frameworks or authors the change relies on. Wording must be original; do not paste text from paid or noncommercial material.

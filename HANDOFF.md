@@ -14,7 +14,12 @@ Design: docs/architecture.md. Evidence: docs/validation.md. Hosts: docs/hosts.md
 Publication checklist and release history: docs/releasing.md.
 
 ## Task
-Release v0.1.2: make develop requests keep the full report around the requested artifact (Codex returned
+Repository profile after v0.1.2: issue forms, SECURITY.md, CODE_OF_CONDUCT.md and a social preview PNG, so the
+GitHub community profile is complete. No skill change and no new release. Checklist: "Repository profile" in
+docs/releasing.md; the upload and repository settings are maintainer steps. Further model trials are out of
+scope by maintainer decision; open limits stay listed under "Not established" in docs/validation.md.
+
+Previous task: release v0.1.2: make develop requests keep the full report around the requested artifact (Codex returned
 the document alone), record regression evidence, and publish. Done; the maintainer approved push and tag.
 Checklist: "Next version: v0.1.2" in docs/releasing.md. (v0.1.0 and v0.1.1 are published.)
 
