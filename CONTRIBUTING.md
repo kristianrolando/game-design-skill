@@ -25,6 +25,7 @@ Do not publish or change global settings unless the current request asks for it.
 - **Lens files** (`skills/game-design-skill/references/`): each keeps the six sections When to use, Gather, Checks, Common problems, Fix menu, Reporting notes, in that order. A new lens family needs its file, a lens-table row in SKILL.md, a README row and an update to the expected count in the tests.
 - **Wording**: write original text. The reference bundle used during design is licensed PolyForm Noncommercial 1.0.0; never copy from it. When the bundle is present at `../refrences/game-design-skills-bundle-master`, the tests reject any 10-word passage shared with it. Cite the authors of frameworks you name in README credits.
 - **Host neutrality**: no tool names or features specific to one agent inside the skill folder. Host-specific metadata belongs in adapter files such as `agents/openai.yaml` and `.claude-plugin/`.
+- **README artwork** (`docs/assets/`): plain SVG, edited by hand. Keep the wide and narrow files in step, keep the card's own background so it reads on light and dark themes, use system fonts, and add no scripts, embedded images or external resources. Update the README alt text when the content changes.
 - **Report format**: changing section names in the template also requires updating the tests and the recorded examples, or the change is a breaking one for users who rely on the format.
 
 ## Evidence

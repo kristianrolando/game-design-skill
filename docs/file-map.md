@@ -20,6 +20,7 @@
 | docs/releases/v0.1.0.md | Notes for the first release |
 | docs/examples/*.md | Recorded model trials with their inputs and limits |
 | docs/evidence/*.md | Host loading and discovery checks |
+| docs/assets/*.svg | Editable README banner, wide and narrow layouts |
 | AGENTS.md | Canonical contributor rules for any agent |
 | CLAUDE.md | Claude Code contributor adapter importing AGENTS.md |
 | CONTRIBUTING.md | Shared human and agent contribution workflow |

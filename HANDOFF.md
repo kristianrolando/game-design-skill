@@ -26,15 +26,21 @@ Both public install routes were verified in disposable projects: the Skills CLI 
 folders for Claude Code and Codex, and the GitHub marketplace added, installed and exposed the plugin at
 local scope. The trial install was then removed; Claude Code keeps an orphan-marked cache copy it cleans itself.
 
-Remaining open items in docs/releasing.md: a Claude Code model session with the plugin and direct-skill
-discovery (blocked: the Claude Code CLI OAuth session expired), and optional README banner SVGs.
+README was redesigned after the release: responsive banner SVGs in docs/assets (wide and narrow, own
+background for light and dark themes), a Mermaid intake flow, a "you bring / it does / you get" summary, lens
+icons, a verbatim excerpt from the Night Harbor trial, and a compatibility legend. Technical content is
+unchanged. Rendering was checked with GitHub's markdown API plus github-markdown-css at 1024 px and 375 px in
+light and dark; the picture source switch was confirmed on the live cross-agent-handoff README.
+
+Remaining open item in docs/releasing.md: a Claude Code model session with the plugin and direct-skill
+discovery (blocked: the Claude Code CLI OAuth session expired).
 
 On this machine the active gh account is EternalCloverStudio; the repository belongs to kristianrolando.
 Use `GH_TOKEN=$(gh auth token --user kristianrolando)` per command rather than switching the active account.
 Nothing installed at user scope. No background writers.
 
 ## Evidence
-- python3 -m unittest discover -s tests -v: 18 tests passed locally on 2026-11-03.
+- python3 -m unittest discover -s tests -v: 19 tests passed locally on 2026-11-03.
 - Hosted CI passed on all four jobs for 79591ac (run 41560385711) and 9c9c2b1 (run 41560556115).
 - Release workflow run 41561103985 passed checks and publish; release v0.1.0 targets 9c9c2b1.
 - Public routes: docs/evidence/public-routes-2026-11-03.md. Local host checks:
@@ -52,3 +58,4 @@ bump, new release notes and a new tag, never a moved tag.
 - 2026-11-03: Added repository files, CI and release workflows, docs, checklist and host checks.
 - 2026-11-03: Published the public repository; first hosted CI passed on all four jobs.
 - 2026-11-03: Verified public install routes and published release v0.1.0.
+- 2026-11-03: Redesigned the README with responsive banner artwork and a Mermaid flow (19 tests pass).

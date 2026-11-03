@@ -3,6 +3,7 @@ from pathlib import Path
 import json
 import re
 import unittest
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / 'skills' / 'game-design-skill'
@@ -176,6 +177,22 @@ class RepositoryTests(unittest.TestCase):
         self.assertTrue(paths)
         for path in paths:
             self.assertTrue(list(ROOT.glob(path)), path)
+
+    def test_readme_artwork_is_self_contained(self):
+        readme = (ROOT / 'README.md').read_text(encoding='utf-8')
+        assets = sorted((ROOT / 'docs' / 'assets').glob('*.svg'))
+        self.assertTrue(assets)
+        for path in assets:
+            text = path.read_text(encoding='utf-8')
+            root = ET.fromstring(text)
+            self.assertEqual(root.tag, '{http://www.w3.org/2000/svg}svg', path.name)
+            self.assertIsNotNone(root.find('{http://www.w3.org/2000/svg}title'), path.name)
+            self.assertIsNotNone(root.find('{http://www.w3.org/2000/svg}desc'), path.name)
+            for banned in ('<script', '<image', '<foreignObject', 'href="http', '@import', 'url(http'):
+                self.assertNotIn(banned, text, (path.name, banned))
+            ids = re.findall(r'\bid="([^"]+)"', text)
+            self.assertEqual(len(ids), len(set(ids)), path.name)
+            self.assertIn('docs/assets/' + path.name, readme, path.name)
 
     def test_local_artifacts_are_ignored(self):
         ignored = (ROOT / '.gitignore').read_text(encoding='utf-8').splitlines()

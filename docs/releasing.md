@@ -27,7 +27,7 @@ The maintainer accepted these defaults on 2026-11-03 by approving phase 3.
 - [x] Tests for release notes, workflows, file map and ignore rules.
 - [x] After publication: `homepage` and `repository` in `plugin.json`, CI and license badges in README, and a test that the URLs match the release guard.
 - [x] After the first release: a release badge in README.
-- [ ] Optional: responsive README banner SVGs, as in `cross-agent-handoff/docs/assets/`.
+- [x] Optional: responsive README banner SVGs, as in `cross-agent-handoff/docs/assets/`.
 
 ### 2. Local validation
 
@@ -56,7 +56,6 @@ Results and limits are recorded in [validation.md](validation.md).
 ### Still open
 
 - [ ] Claude Code model session with the plugin, and direct skill discovery from `.claude/skills/` (blocked on CLI sign-in; see phase 2).
-- [ ] Optional: responsive README banner SVGs.
 
 ### 5. Workspace
 

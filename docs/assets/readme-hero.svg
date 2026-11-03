@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="600" viewBox="0 0 1280 600" role="img" aria-labelledby="title desc">
+  <title id="title">Game Design Skill: find what's broken in your game design</title>
+  <desc id="desc">One skill, nine design lenses and a report that ranks issues and proposes the smallest fix. Flow: your material (concept, pitch deck, GDD or playtest notes) goes to a router that fills gaps and picks one to five lenses, for example core loop, flow and failure, and FTUE and retention, then returns a prioritized report with P1 to P3 issues. Report rows are illustrative.</desc>
+  <defs>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M 28 0 H 0 V 28" fill="none" stroke="#23433f" stroke-width="1"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M2 1L7 5L2 9" fill="none" stroke="#6b998b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect width="1280" height="600" rx="24" fill="#f3efe6"/>
+  <path d="M700 0H1256Q1280 0 1280 24V576Q1280 600 1256 600H700Z" fill="#102d2a"/>
+  <path d="M700 0H1256Q1280 0 1280 24V576Q1280 600 1256 600H700Z" fill="url(#grid)" opacity=".48"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif">
+    <rect x="48" y="44" width="34" height="34" rx="9" fill="#172c2a"/>
+    <path d="M58 61H72M65 54V68" stroke="#f3efe6" stroke-width="2.6" stroke-linecap="round"/>
+    <text x="96" y="67" fill="#213a36" font-size="17" font-weight="700" letter-spacing="2">GAME DESIGN SKILL</text>
+
+    <text x="48" y="190" fill="#152d29" font-size="58" font-weight="750" letter-spacing="-2">Find what&#8217;s broken</text>
+    <text x="48" y="262" fill="#152d29" font-size="58" font-weight="750" letter-spacing="-2">in your game design.</text>
+    <text x="50" y="322" fill="#455851" font-size="24">One skill. Nine design lenses. A report that</text>
+    <text x="50" y="358" fill="#455851" font-size="24">ranks issues and proposes the smallest fix.</text>
+    <line x1="50" y1="404" x2="652" y2="404" stroke="#d2d7cd"/>
+
+    <text x="50" y="466" fill="#ad5f3c" font-size="42" font-weight="750" letter-spacing="-1">9</text>
+    <text x="50" y="496" fill="#53645b" font-size="16">design lenses</text>
+    <text x="236" y="466" fill="#ad5f3c" font-size="42" font-weight="750" letter-spacing="-1">&#8804;3</text>
+    <text x="236" y="496" fill="#53645b" font-size="16">intake questions</text>
+    <text x="440" y="466" fill="#ad5f3c" font-size="42" font-weight="750" letter-spacing="-1">P1&#8211;P3</text>
+    <text x="440" y="496" fill="#53645b" font-size="16">ranked, minimal fixes</text>
+
+    <text x="50" y="556" fill="#53645b" font-size="15" font-weight="600" letter-spacing="1.5">CLAUDE CODE PLUGIN &#183; CODEX SKILL &#183; PORTABLE SKILL.md &#183; MIT</text>
+
+    <text x="740" y="56" fill="#a8c7bd" font-size="14" font-weight="700" letter-spacing="2">1  YOUR MATERIAL</text>
+    <g font-size="16" text-anchor="middle" fill="#e6eee6">
+      <rect x="740" y="72" width="104" height="38" rx="10" fill="#1d413b" stroke="#3d6a60"/>
+      <text x="792" y="97">Concept</text>
+      <rect x="856" y="72" width="124" height="38" rx="10" fill="#1d413b" stroke="#3d6a60"/>
+      <text x="918" y="97">Pitch deck</text>
+      <rect x="992" y="72" width="72" height="38" rx="10" fill="#1d413b" stroke="#3d6a60"/>
+      <text x="1028" y="97">GDD</text>
+      <rect x="1076" y="72" width="164" height="38" rx="10" fill="#1d413b" stroke="#3d6a60"/>
+      <text x="1158" y="97">Playtest notes</text>
+    </g>
+    <path d="M990 118V142" stroke="#6b998b" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <text x="740" y="168" fill="#a8c7bd" font-size="14" font-weight="700" letter-spacing="2">2  ROUTER</text>
+    <rect x="740" y="180" width="500" height="48" rx="12" fill="#f0d5c2"/>
+    <circle cx="764" cy="204" r="6" fill="#ad5f3c"/>
+    <text x="782" y="210" fill="#5c3728" font-size="17" font-weight="600">Fills gaps, then picks the 1&#8211;5 lenses that matter</text>
+    <path d="M990 236V258" stroke="#6b998b" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <text x="740" y="284" fill="#a8c7bd" font-size="14" font-weight="700" letter-spacing="2">3  NINE LENSES</text>
+    <g font-size="15" text-anchor="middle">
+      <rect x="740" y="296" width="158" height="34" rx="9" fill="none" stroke="#3d6a60"/>
+      <text x="819" y="318" fill="#a8c7bd">Emotion</text>
+      <rect x="911" y="296" width="158" height="34" rx="9" fill="none" stroke="#3d6a60"/>
+      <text x="990" y="318" fill="#a8c7bd">Motivation</text>
+      <rect x="1082" y="296" width="158" height="34" rx="9" fill="#f0d5c2"/>
+      <text x="1161" y="318" fill="#5c3728" font-weight="700">Core loop</text>
+      <rect x="740" y="340" width="158" height="34" rx="9" fill="#f0d5c2"/>
+      <text x="819" y="362" fill="#5c3728" font-weight="700">Flow &amp; failure</text>
+      <rect x="911" y="340" width="158" height="34" rx="9" fill="#f0d5c2"/>
+      <text x="990" y="362" fill="#5c3728" font-weight="700">FTUE &amp; retention</text>
+      <rect x="1082" y="340" width="158" height="34" rx="9" fill="none" stroke="#3d6a60"/>
+      <text x="1161" y="362" fill="#a8c7bd">Social</text>
+      <rect x="740" y="384" width="158" height="34" rx="9" fill="none" stroke="#3d6a60"/>
+      <text x="819" y="406" fill="#a8c7bd">Prototyping</text>
+      <rect x="911" y="384" width="158" height="34" rx="9" fill="none" stroke="#3d6a60"/>
+      <text x="990" y="406" fill="#a8c7bd">Pitch &amp; GDD</text>
+      <rect x="1082" y="384" width="158" height="34" rx="9" fill="none" stroke="#3d6a60"/>
+      <text x="1161" y="406" fill="#a8c7bd">Scope &amp; budget</text>
+    </g>
+    <path d="M990 426V448" stroke="#6b998b" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <text x="740" y="474" fill="#a8c7bd" font-size="14" font-weight="700" letter-spacing="2">4  PRIORITIZED REPORT</text>
+    <rect x="740" y="486" width="500" height="94" rx="12" fill="#fffdf8"/>
+    <g font-size="13" font-weight="700" text-anchor="middle" fill="#fffdf8">
+      <rect x="758" y="497" width="40" height="22" rx="6" fill="#ad5f3c"/>
+      <text x="778" y="513">P1</text>
+      <rect x="758" y="523" width="40" height="22" rx="6" fill="#b9822f"/>
+      <text x="778" y="539">P2</text>
+      <rect x="758" y="549" width="40" height="22" rx="6" fill="#5f8a7d"/>
+      <text x="778" y="565">P3</text>
+    </g>
+    <g font-size="16" fill="#213a36">
+      <text x="812" y="514">Loop can&#8217;t finish in one session</text>
+      <text x="812" y="540">Failure costs too much time</text>
+      <text x="812" y="566">Tutorial text runs long</text>
+    </g>
+    <g font-size="13" fill="#6b7b72" text-anchor="end">
+      <text x="1222" y="514">minimal fix &#183; S</text>
+      <text x="1222" y="540">minimal fix &#183; S</text>
+      <text x="1222" y="566">minimal fix &#183; M</text>
+    </g>
+  </g>
+</svg>
