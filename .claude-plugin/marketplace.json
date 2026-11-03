@@ -1,0 +1,14 @@
+{
+  "name": "game-design-tools",
+  "owner": {
+    "name": "Kristian Rolando Limantara"
+  },
+  "plugins": [
+    {
+      "name": "game-design-skill",
+      "source": "./",
+      "description": "Game design audits, plans and docs with prioritized minimal fixes."
+    }
+  ],
+  "description": "Game design analysis and development skills"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Game Design Skill"
+  short_description: "Audit and develop game designs with focused lenses"
+  default_prompt: "Use $game-design-skill to review this game design and recommend minimal fixes."
