@@ -2,7 +2,7 @@
 
 ## Publication status
 
-Not published. The folder is not yet a Git repository, nothing is installed globally, and no tag or release exists. The planned public repository is `kristianrolando/game-design-skill`; change it everywhere listed in step 0 if a different name is chosen.
+Not published. The folder is a local Git repository on `main`; no remote exists yet, nothing is installed globally, and no tag or release exists. The planned public repository is `kristianrolando/game-design-skill`; change it everywhere listed in step 0 if a different name is chosen.
 
 ## Publication checklist
 
@@ -38,7 +38,7 @@ Results and limits are recorded in [validation.md](validation.md).
 
 ### 3. Repository (maintainer)
 
-- [ ] `git init -b main`, review `git status`, first commit.
+- [x] `git init -b main`, review `git status`, first commit.
 - [ ] Create the GitHub repository with the chosen visibility and push `main`. Never force-push.
 - [ ] Set topics: `agent-skills`, `claude-code`, `codex`, `game-design`, `ai-agents`.
 - [ ] Inspect the first hosted Package checks run and fix actual failures.

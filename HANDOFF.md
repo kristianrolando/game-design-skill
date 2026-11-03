@@ -34,7 +34,11 @@ Phase 0 decisions were not answered; defaults in docs/releasing.md were used (pu
 kristianrolando/game-design-skill, v0.1.0, separate game-design-tools marketplace, honest host claims).
 If the repo name changes, update release.yml, README and docs/hosts.md.
 
-Not a Git repository. Nothing installed at user scope or published. Disposable trial folders live in a
+Phase 3 started 2026-11-03: local Git repository on branch main with the first commit. Creating the public
+GitHub repository was refused by the agent session's permission guard, so the maintainer must create it and
+push (commands in Next). The active gh account on this machine is EternalCloverStudio; the repository belongs
+to kristianrolando, so use that account's token rather than switching the active account.
+Nothing installed at user scope or published. Disposable trial folders live in a
 temporary scratch directory outside the repository. No background writers.
 
 ## Evidence
@@ -48,9 +52,11 @@ temporary scratch directory outside the repository. No background writers.
 - Limits: single runs; trial concepts are invented; six hosts are documented routes only.
 
 ## Next
-Maintainer: answer the phase 0 decisions in docs/releasing.md and re-sign in to the Claude Code CLI. Then
-rerun the blocked Claude checks and, on an explicit request, do phase 3 (git init, first commit, create and
-push the repository, inspect CI).
+Maintainer: create and push the repository from this folder:
+GH_TOKEN=$(gh auth token --user kristianrolando) gh repo create kristianrolando/game-design-skill --public
+then push main with that token, set topics, and inspect the first Package checks run. After it exists, add
+homepage/repository to plugin.json and badges to README (docs/releasing.md). Separately, re-sign in to the
+Claude Code CLI and rerun the blocked Claude checks.
 
 ## Recent outcomes
 - 2026-11-03: Created game-design-skill v0.1.0 with nine lenses, tests and a recorded trial.
