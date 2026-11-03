@@ -77,7 +77,7 @@ Nothing in this checklist. Further work (real-project trials, untested lenses, m
 - [x] Issue forms (`.github/ISSUE_TEMPLATE/`), SECURITY.md and CODE_OF_CONDUCT.md.
 - [x] Social preview image `docs/assets/social-preview.png` (1280×640), rendered from `readme-hero.svg` with headless Chrome.
 - [ ] **(maintainer)** Upload the social preview in Settings → General → Social preview. GitHub has no API for it.
-- [ ] **(maintainer)** Disable the empty Wiki, set the homepage to the skills.sh listing, and enable private vulnerability reporting, which SECURITY.md relies on.
+- [x] **(maintainer)** Disabled the empty Wiki, set the homepage to the skills.sh listing, and enabled private vulnerability reporting, which SECURITY.md relies on. Approved and applied on 2026-11-03 after [CI run 41647910497](https://github.com/kristianrolando/game-design-skill/actions/runs/41647910497) passed for `c47a228`; community profile health 100%.
 
 ### 5. Workspace
 
