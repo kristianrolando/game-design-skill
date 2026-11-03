@@ -1,7 +1,7 @@
 # Project handoff
 
 - format: cross-agent-handoff/1
-- task_status: done
+- task_status: in_progress
 - handoff: ready
 - writer: none
 
@@ -14,9 +14,9 @@ Design: docs/architecture.md. Evidence: docs/validation.md. Hosts: docs/hosts.md
 Publication checklist and release history: docs/releasing.md.
 
 ## Task
-Release v0.1.1: tighten the Deliverable rule in SKILL.md so diagnose and decide reports never add a
-Deliverable section, record regression evidence, and publish. Done; the maintainer approved push and tag.
-Checklist: "Next version: v0.1.1" in docs/releasing.md. (v0.1.0 publication, the earlier task, is done.)
+Prepare v0.1.2: make develop requests keep the full report around the requested artifact (Codex returned
+the document alone), record regression evidence, then publish when the maintainer approves push and tag.
+Checklist: "Next version: v0.1.2" in docs/releasing.md. (v0.1.0 and v0.1.1 are published.)
 
 ## State
 Public repository on main with topics, plugin URLs, CI, license and release badges. Release v0.1.1 (Latest)
@@ -52,11 +52,18 @@ report, under both versions: a known limit that predates v0.1.1.
 
 On this machine the active gh account is EternalCloverStudio; the repository belongs to kristianrolando.
 Use `GH_TOKEN=$(gh auth token --user kristianrolando)` per command rather than switching the active account.
+v0.1.2 prepared locally: SKILL.md says every output follows the report structure, develop requests
+included; asking for an artifact is not a format switch; the artifact sits under Deliverable with every other
+section kept around it. plugin.json is 0.1.2; docs/releases/v0.1.2.md and its file-map row exist. Regression
+runs: docs/evidence/regression-v0.1.2-2026-11-03.md. Three Codex develop runs of Lantern Post kept the full
+report (previously 0 of 3); one Claude develop run kept it; one diagnose run per host left Deliverable out.
+Minor Codex drift: one omitted Lens column, two put lens names inside findings. Committed locally, not pushed.
+
 Nothing installed at user scope. No background writers.
 
 ## Evidence
 - python3 -m unittest discover -s tests -v: 19 tests passed locally on 2026-11-03, including after the
-  v0.1.1 changes; git diff --check clean.
+  v0.1.1 and v0.1.2 changes; git diff --check clean.
 - v0.1.1 regression runs: docs/evidence/regression-v0.1.1-2026-11-03.md (Codex CLI 0.166, gpt-6.1-sol;
   Claude Code CLI 2.1.287, claude-opus-5-5).
 - Hosted CI passed on all four jobs for 79591ac (run 41560385711) and 9c9c2b1 (run 41560556115).
@@ -67,12 +74,14 @@ Nothing installed at user scope. No background writers.
   docs/evidence/host-checks-2026-11-03.md.
 - Model trials: two Claude subagent trials, one Codex CLI trial, and five Claude Code CLI trials (plugin,
   direct skill, and three lens trials) in docs/examples. All nine lens families covered.
+- v0.1.2 regression runs: docs/evidence/regression-v0.1.2-2026-11-03.md (same hosts and models).
 - Limits: single runs; trial concepts are invented; six hosts are documented routes only.
 
 ## Next
-No release work remains. Check hosted CI for the post-release documentation commit.
-Later quality work: make develop mode keep the report around the deliverable in Codex; review a real
-design from the maintainer. Never move a published tag.
+With maintainer approval: push main, check hosted CI, push annotated tag v0.1.2 on that commit, check the
+release workflow, then record links (README badge, releasing.md, validation.md, this file).
+Later quality work: review a real design from the maintainer; repeated runs to measure format drift.
+Never move a published tag.
 
 ## Recent outcomes
 - 2026-11-03: Created game-design-skill v0.1.0 with nine lenses, tests and a recorded trial.
@@ -85,3 +94,4 @@ design from the maintainer. Never move a published tag.
 - 2026-11-03: Prepared v0.1.1 (Deliverable rule) with Codex regression evidence; local commit, not pushed.
 - 2026-11-03: Claude Code reruns after the limit reset: no Deliverable in v0.1.1 or baseline.
 - 2026-11-03: Published release v0.1.1 from tag v0.1.1 on 35b6daa; CI and release workflow passed.
+- 2026-11-03: Prepared v0.1.2 (full report in develop mode); 3 of 3 Codex develop runs kept the report.

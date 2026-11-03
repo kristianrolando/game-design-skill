@@ -27,6 +27,10 @@ One deviation was observed: in the Gravekeeper's Garden diagnosis, the report ad
 
 See [regression-v0.1.1-2026-11-03.md](evidence/regression-v0.1.1-2026-11-03.md). Six Codex runs and three Claude Code runs reused the Gravekeeper's Garden and Lantern Post inputs under v0.1.1 and, as a baseline, v0.1.0. None of the four v0.1.1 diagnose runs added Deliverable, so no regression was seen, and both Claude runs answered the user's questions in the Summary. The fix is consistent with this but not proven: neither baseline reproduced the deviation, which has appeared once in two v0.1.0 Claude Code runs of this input. In develop mode Codex returned only the requested document, without the surrounding report, under both versions; this predates v0.1.1.
 
+### Regression runs for v0.1.2
+
+See [regression-v0.1.2-2026-11-03.md](evidence/regression-v0.1.2-2026-11-03.md). Version 0.1.2 states that develop requests keep the full report around the artifact. Three Codex develop runs of the Lantern Post input all kept the header, Summary, Deliverable, findings, priority table, minimal fixes and next steps, where the three earlier Codex runs of that input returned the document alone. A Claude Code develop run kept the full report too, and one diagnose run on each host added no Deliverable. Minor Codex format drift remains: one run omitted the Lens column and two wrote lens names inside findings instead of as subheadings.
+
 Observed across the trials: the router's intake rule, lens selection, confidence labels, severity table, minimal fixes with checks, develop-mode Deliverable section, and the unprompted ethics flag all appeared as specified. The concepts were written for the trials, so the findings are design reasoning, not evidence about real players. Each trial is a single run.
 
 ## Host checks
@@ -47,4 +51,4 @@ With the reference bundle present locally, the suite confirms no 10-word passage
 
 ## Not established
 
-Advice quality on real projects, behavior across many runs or models, how often the Deliverable deviation occurs under either version (single runs cannot show it), report structure in Codex develop mode, a model session with the plugin installed through the marketplace (the session used `--plugin-dir`), user-scope installs, and hosts not listed above.
+Advice quality on real projects, behavior across many runs or models, how often the Deliverable deviation occurs under either version (single runs cannot show it), report structure for develop requests other than a one-page doc, a model session with the plugin installed through the marketplace (the session used `--plugin-dir`), user-scope installs, and hosts not listed above.

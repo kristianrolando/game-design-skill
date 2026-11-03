@@ -19,6 +19,7 @@
 | docs/releasing.md | Publication checklist and release workflow |
 | docs/releases/v0.1.0.md | Notes for the first release |
 | docs/releases/v0.1.1.md | Notes for the Deliverable-rule fix release |
+| docs/releases/v0.1.2.md | Notes for the develop-mode report fix release |
 | docs/examples/*.md | Recorded model trials with their inputs and limits |
 | docs/evidence/*.md | Host loading, install route and regression checks |
 | docs/assets/*.svg | Editable README banner, wide and narrow layouts |

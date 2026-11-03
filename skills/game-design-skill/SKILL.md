@@ -62,7 +62,7 @@ Add effort (S, M, L). Rank by severity first, then by how much player impact eac
 
 ### 5. Report
 
-Every output follows this structure; switch formats only on request. Use only these sections, in this order, and add no others: answer the user's direct questions (for example "what should players feel?") in the Summary, with detail in the findings. Include **Deliverable** only when the user asked you to produce an artifact (a doc, pillars, a plan, options); then keep the other sections short. For diagnose and decide requests, leave Deliverable out even when you want to propose an artifact: describe a proposed artifact, such as a tone guide, inside the minimal fix that needs it.
+Every output follows this structure, develop requests included; switch formats only when the user asks for a different report format. Asking for an artifact is not such a request. Use only these sections, in this order, and add no others: answer the user's direct questions (for example "what should players feel?") in the Summary, with detail in the findings. Include **Deliverable** only when the user asked you to produce an artifact (a doc, pillars, a plan, options). Put the artifact there and keep the header and every other section around it, each brief: the artifact never replaces the report, and the findings name its gaps and open questions. For diagnose and decide requests, leave Deliverable out even when you want to propose an artifact: describe a proposed artifact, such as a tone guide, inside the minimal fix that needs it.
 
 ```markdown
 # Game design review: <target>
@@ -75,7 +75,7 @@ Every output follows this structure; switch formats only on request. Use only th
 <3-5 sentences: what the design is, its strongest asset, the biggest problem, overall verdict, and a direct answer to each question the user asked.>
 
 ## Deliverable
-<Only when the user asked for an artifact: the doc, pillars, plan or options. Omit this whole section for diagnose and decide requests.>
+<Only when the user asked for an artifact: the doc, pillars, plan or options, followed by the sections below. Omit this whole section for diagnose and decide requests.>
 
 ## Findings by lens
 ### <Lens name>

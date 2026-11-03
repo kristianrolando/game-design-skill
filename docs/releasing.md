@@ -65,6 +65,13 @@ Nothing in this checklist. Further work (real-project trials, untested lenses, m
 - [x] **(maintainer)** Pushed main; [hosted CI](https://github.com/kristianrolando/game-design-skill/actions/runs/41590763914) passed on all four jobs for `35b6daa`. Pushed annotated tag `v0.1.1` on that commit; [release workflow](https://github.com/kristianrolando/game-design-skill/actions/runs/41590841216) passed checks and publish.
 - [x] After publication: README release badge, publication status above, HANDOFF.md and validation.md updated.
 
+### Next version: v0.1.2
+
+- [x] Require the full report around the artifact for develop requests in SKILL.md, bump `plugin.json` to 0.1.2, add `docs/releases/v0.1.2.md` and its file-map row.
+- [x] Regression runs recorded in [regression-v0.1.2-2026-11-03.md](evidence/regression-v0.1.2-2026-11-03.md): three Codex develop runs kept the full report, one Claude Code develop run kept it, and both diagnose runs left Deliverable out; validation.md updated.
+- [ ] **(maintainer)** Push main, check hosted CI, then push annotated tag `v0.1.2` on that commit and check the release workflow.
+- [ ] After publication: README release badge, publication status above, HANDOFF.md and validation.md.
+
 ### 5. Workspace
 
 - [x] Add the repository URL to the `game-design-skill/` row in the workspace `AGENTS.md`.

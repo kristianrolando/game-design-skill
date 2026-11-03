@@ -1,6 +1,6 @@
 {
   "name": "game-design-skill",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Router skill for analyzing and developing game designs through focused design lenses.",
   "skills": [
     "./skills/game-design-skill"
