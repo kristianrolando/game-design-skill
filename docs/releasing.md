@@ -62,7 +62,7 @@ Nothing in this checklist. Further work (real-project trials, untested lenses, m
 
 - [x] Tighten the Deliverable rule in SKILL.md, bump `plugin.json` to 0.1.1, add `docs/releases/v0.1.1.md` and its file-map row.
 - [x] Codex regression and baseline runs recorded in [regression-v0.1.1-2026-11-03.md](evidence/regression-v0.1.1-2026-11-03.md); validation.md updated.
-- [ ] Claude Code rerun of the Gravekeeper's Garden diagnose input under v0.1.1 (blocked by the account's session limit on 2026-11-03). Record the result in the regression evidence and validation.md, and adjust the release notes if the fix does not hold.
+- [x] Claude Code reruns of the Gravekeeper's Garden diagnose input after the session limit reset: two under v0.1.1 and a v0.1.0 baseline, none with a Deliverable section. The baseline did not reproduce the deviation, so the evidence shows no regression rather than proof of the fix.
 - [ ] **(maintainer)** Push main, check hosted CI, then push tag `v0.1.1` on the verified commit and confirm the release workflow.
 - [ ] After publication: update the README release badge, the publication status above, HANDOFF.md and validation.md with the run and release links.
 

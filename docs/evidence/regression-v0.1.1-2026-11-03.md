@@ -13,7 +13,17 @@ For Codex, the leading `/game-design-skill` was replaced with `Use $game-design-
 
 ## Claude Code
 
-Claude Code CLI 2.1.287, `claude -p`, model `claude-opus-5-5`, direct skill in `.claude/skills/`, allowed tools Read, Skill and Glob. Both runs (diagnose and develop) stopped before any model turn: the account had reached its five-hour session limit. **No Claude result exists for v0.1.1.** This is the host where the original deviation was observed, so the fix is not yet confirmed there.
+Claude Code CLI 2.1.287, `claude -p --output-format stream-json`, model `claude-opus-5-5`, direct skill in `.claude/skills/`, allowed tools Read, Skill and Glob. This is the setup of the trial where the deviation was observed.
+
+The first attempts (diagnose and develop, about 09:34 Asia/Jakarta) and a retry at 09:57 stopped before any model turn: the account had reached its five-hour session limit. After the reset, three diagnose runs started together at 12:51. Each init event listed the project skill `game-design-skill`; each run took about 97 to 114 seconds.
+
+| Run | SKILL.md | Lens files read | Deliverable section | Report structure |
+| --- | --- | --- | --- | --- |
+| Diagnose A | v0.1.1 | emotional direction, flow and fairness, FTUE and retention | None | Template headings in order. Summary answers "is it clear", "what should players feel" and "what is in the way" directly. The proposed tone guide is minimal fix F1. |
+| Diagnose B | v0.1.1 | emotional direction, FTUE and retention | None | Template headings in order. Summary states what players should feel and what is in the way. |
+| Diagnose baseline | v0.1.0 | emotional direction, flow and fairness, FTUE and retention | None | Template headings in order. A proposed emotional target follows the Summary paragraph; the tone guide is minimal fix F1. |
+
+No develop run was repeated in Claude Code: the earlier Lantern Post trial already showed develop mode under v0.1.0, and the v0.1.1 wording for develop requests did not change in substance.
 
 ## Codex
 
@@ -30,14 +40,14 @@ Codex CLI 0.166.0-alpha.5.1, `codex exec --sandbox read-only`, model `gpt-6.1-so
 
 ## What this shows
 
-- **No regression in diagnose mode.** Under v0.1.1 neither diagnose run added a Deliverable section, and the first run placed its proposed artifact inside a minimal fix, as the new wording asks.
-- **The fix is not demonstrated by these runs.** The Codex baseline under v0.1.0 also omitted Deliverable, so Codex does not reproduce the original deviation. Confirming the fix needs a Claude Code rerun of the diagnose input.
+- **No regression in diagnose mode.** None of the four v0.1.1 diagnose runs (two Claude Code, two Codex) added a Deliverable section. Where a run proposed an artifact, it placed it inside a minimal fix, and both Claude runs answered the user's questions in the Summary, as the new wording asks.
+- **The fix is consistent with the evidence but not proven.** Neither baseline reproduced the deviation: the v0.1.0 runs in Claude Code and Codex also omitted Deliverable. Across all Claude Code runs of this input, the deviation has appeared once in two v0.1.0 runs and in none of two v0.1.1 runs. That is too few runs to show a difference; it is an intermittent behavior, and v0.1.1 states the rule explicitly instead of leaving it implied.
 - **Known limit, not caused by v0.1.1:** in develop mode Codex returned only the requested document, without the surrounding report. This happened under both versions, so it predates v0.1.1. The earlier Claude develop trial (Lantern Post) did keep the full report. A clearer instruction for develop requests is a candidate for a later version.
 - **Minor format drift:** one v0.1.1 diagnose run used bold labels instead of headings and dropped the Lens column. Single runs cannot tell whether this is related to the wording change.
 
 ## Limits
 
-Single runs per cell, one Codex model, invented concepts. Outputs were kept in a temporary scratch folder and are not part of this repository; the first v0.1.1 diagnose output is reproduced below unedited, apart from removing the trailing file list (shown in the table) and trailing spaces.
+One or two runs per cell, one model per host, invented concepts. Outputs were kept in a temporary scratch folder and are not part of this repository; the first v0.1.1 diagnose output is reproduced below unedited, apart from removing the trailing file list (shown in the table) and trailing spaces.
 
 ## Diagnose 1 output (Codex, v0.1.1)
 
