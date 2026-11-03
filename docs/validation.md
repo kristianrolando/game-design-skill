@@ -45,10 +45,12 @@ See [host-checks-2026-11-03.md](evidence/host-checks-2026-11-03.md). Summary:
 
 See [public-routes-2026-11-03.md](evidence/public-routes-2026-11-03.md). The Skills CLI installed identical copies for Claude Code and Codex; the GitHub marketplace added, installed and exposed the plugin at local scope; tag `v0.1.0` produced the GitHub release through the release workflow, tag `v0.1.1` produced the v0.1.1 release ([run](https://github.com/kristianrolando/game-design-skill/actions/runs/41590841216)), and tag `v0.1.2` produced the v0.1.2 release ([run](https://github.com/kristianrolando/game-design-skill/actions/runs/41601696343)).
 
+After v0.1.2 both routes were checked again, together with update and removal ([evidence](evidence/public-routes-v0.1.2-2026-11-03.md)). The Skills CLI installed copies identical to v0.1.2, reported them up to date and removed them cleanly. Through the GitHub marketplace, Claude Code installed plugin 0.1.2 at local scope, a model session invoked the installed plugin skill and returned a report in the template, and update, uninstall and marketplace removal left the local settings empty.
+
 ## Content provenance
 
 With the reference bundle present locally, the suite confirms no 10-word passage is shared with it. A manual 7-word scan during authoring found five generic phrases, which were reworded. This check does not run in CI.
 
 ## Not established
 
-Advice quality on real projects, behavior across many runs or models, how often the Deliverable deviation occurs under either version (single runs cannot show it), report structure for develop requests other than a one-page doc, a model session with the plugin installed through the marketplace (the session used `--plugin-dir`), user-scope installs, and hosts not listed above.
+Advice quality on real projects, behavior across many runs or models, how often the Deliverable deviation occurs under either version (single runs cannot show it), report structure for develop requests other than a one-page doc, an update from an older installed version to a newer one, user-scope installs, and hosts not listed above.

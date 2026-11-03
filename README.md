@@ -66,6 +66,21 @@ Locations for all hosts, and how to activate the skill in each, are in the [host
 
 </details>
 
+<details>
+<summary><strong>Updates and removal</strong></summary>
+
+Both public routes install from the default branch, where the skill changes only with a release. Pass the same scope you installed with (`-s local`, `-s project` or `-g`).
+
+| Route | Update | Remove |
+| --- | --- | --- |
+| Claude Code plugin | `claude plugin marketplace update game-design-tools`, then `claude plugin update game-design-skill@game-design-tools` and restart the session | `claude plugin uninstall game-design-skill@game-design-tools`, then `claude plugin marketplace remove game-design-tools` |
+| Skills CLI | `npx skills update game-design-skill` | `npx skills remove game-design-skill` (removes it from every agent folder it installed to) |
+| Manual copy | Replace the whole `game-design-skill` folder; do not copy the new one inside the old one | Delete the `game-design-skill` folder |
+
+All of these commands were run against v0.1.2 ([evidence](docs/evidence/public-routes-v0.1.2-2026-11-03.md)). The skill keeps no data of its own, so removal leaves nothing behind except what the host itself caches.
+
+</details>
+
 ## How it works
 
 ```mermaid
@@ -130,7 +145,7 @@ Together the trials load all nine lens families at least once.
 
 | Host / component | Route | Evidence and limits |
 | --- | --- | --- |
-| ✅ **Claude Code** | Included plugin or direct skill | Manifests validate; the GitHub marketplace adds, the plugin installs and exposes the skill, and the Skills CLI copies the skill into `.claude/skills/` (CLI 2.1.287). Model sessions invoked both the plugin skill and the direct skill and returned reports in the template. |
+| ✅ **Claude Code** | Included plugin or direct skill | Manifests validate; the GitHub marketplace adds, the plugin installs and exposes the skill, and the Skills CLI copies the skill into `.claude/skills/` (CLI 2.1.287). Model sessions invoked the plugin skill (from `--plugin-dir` and from a marketplace install) and the direct skill and returned reports in the template; update and removal commands were checked. |
 | ✅ **Codex** | Direct skill; optional `agents/openai.yaml` metadata | Codex CLI 0.166 discovered the project-local skill and produced a report in the template. |
 | 📄 **Antigravity, Cursor, Gemini CLI, GitHub Copilot, OpenCode, Cline** | Direct skill in the [documented folders](docs/hosts.md) | Documented routes only; not exercised for this package. |
 | 📄 Other filesystem agents | Explicitly read `SKILL.md` | Portable fallback; native discovery not verified. |

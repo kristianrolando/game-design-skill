@@ -37,6 +37,16 @@ npx skills add kristianrolando/game-design-skill --skill game-design-skill
 
 Review the destination it reports; if the host does not discover it there, use the manual paths above.
 
+## Updates and removal
+
+Both public routes install from the default branch, where the skill changes only with a release. Use the scope you installed with.
+
+- **Plugin:** `claude plugin marketplace update game-design-tools`, then `claude plugin update game-design-skill@game-design-tools` (add `-s local` or `-s project` if needed) and restart the session. To remove: `claude plugin uninstall game-design-skill@game-design-tools`, then `claude plugin marketplace remove game-design-tools`. Claude Code may keep an orphan-marked cache copy, which it cleans itself.
+- **Skills CLI:** `npx skills update game-design-skill` (`-p` project, `-g` global) and `npx skills remove game-design-skill` (`-g` for a global install). Removal clears every agent folder the installer wrote to and the entry in `skills-lock.json`.
+- **Manual copies:** replace the entire `game-design-skill` folder in each location, keeping all copies on the same version, and never nest the new folder inside the old one. To remove, delete the folder.
+
+The skill stores no data of its own, so removal leaves no project files behind.
+
 ## Fallback
 
 Any agent with file access can use the skill without installation:

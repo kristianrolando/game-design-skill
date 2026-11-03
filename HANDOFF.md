@@ -59,6 +59,10 @@ runs: docs/evidence/regression-v0.1.2-2026-11-03.md. Three Codex develop runs of
 report (previously 0 of 3); one Claude develop run kept it; one diagnose run per host left Deliverable out.
 Minor Codex drift: one omitted Lens column, two put lens names inside findings. Published as v0.1.2.
 
+After v0.1.2 the public routes were rechecked with update and removal (docs/evidence/public-routes-v0.1.2-2026-11-03.md),
+including the first model session with the marketplace-installed plugin. README and docs/hosts.md now document
+updates and removal.
+
 Nothing installed at user scope. No background writers.
 
 ## Evidence
@@ -70,7 +74,8 @@ Nothing installed at user scope. No background writers.
 - Release workflow run 41561103985 passed checks and publish; release v0.1.0 targets 9c9c2b1.
 - v0.1.1: hosted CI run 41590763914 passed all four jobs on 35b6daa; release workflow run 41590841216
   passed checks and publish; release v0.1.1 targets 35b6daa and is marked Latest.
-- Public routes: docs/evidence/public-routes-2026-11-03.md. Local host checks:
+- Public routes: docs/evidence/public-routes-2026-11-03.md and, for v0.1.2 with update and removal,
+  docs/evidence/public-routes-v0.1.2-2026-11-03.md. Local host checks:
   docs/evidence/host-checks-2026-11-03.md.
 - Model trials: two Claude subagent trials, one Codex CLI trial, and five Claude Code CLI trials (plugin,
   direct skill, and three lens trials) in docs/examples. All nine lens families covered.
@@ -97,3 +102,4 @@ Never move a published tag.
 - 2026-11-03: Published release v0.1.1 from tag v0.1.1 on 35b6daa; CI and release workflow passed.
 - 2026-11-03: Prepared v0.1.2 (full report in develop mode); 3 of 3 Codex develop runs kept the report.
 - 2026-11-03: Published release v0.1.2 from tag v0.1.2 on 328d11b; CI and release workflow passed.
+- 2026-11-03: Rechecked public routes for v0.1.2 with update, removal and a marketplace-plugin session; documented updates and removal.
