@@ -13,14 +13,18 @@ Evidence is grouped by kind. Automated checks, model trials and host checks prov
 | 2026-11-03 | Claude Opus 5.5 subagent, explicit file reads | Core loop audit, full context | Core loop, flow, FTUE | [Night Harbor](examples/core-loop-audit-night-harbor.md) |
 | 2026-11-03 | Claude Opus 5.5 subagent, explicit file reads | Core loop question, almost no context | None (asked three questions with defaults) | Intake check in the Night Harbor record |
 | 2026-11-03 | Codex CLI 0.166, `gpt-6.1-sol`, native project skill discovery | FTUE review with playtest notes | FTUE, flow | [Ember Pact](examples/ftue-review-ember-pact-codex.md) |
+| 2026-11-03 | Claude Code CLI 2.1.287, `claude-opus-5-5`, plugin via `--plugin-dir` | Social design review | Multiplayer and social, flow | [Raft Rally](examples/social-review-raft-rally-claude-plugin.md) |
+| 2026-11-03 | Claude Code CLI 2.1.287, `claude-opus-5-5`, direct skill in `.claude/skills/` | One-page design doc (develop mode) | Pitch and GDD, core loop, scoping | [Lantern Post](examples/one-page-gdd-lantern-post-claude-skill.md) |
 
-Observed across the trials: the router's intake rule, lens selection, confidence labels, severity table, minimal fixes with checks, and the unprompted ethics flag all appeared as specified. The concepts were written for the trials, so the findings are design reasoning, not evidence about real players. Each trial is a single run.
+Lens coverage across trials: six of nine lens families have been loaded (core loop, flow, FTUE, multiplayer and social, pitch and GDD, scoping). Emotional direction, motivation and prototyping have not been exercised yet.
+
+Observed across the trials: the router's intake rule, lens selection, confidence labels, severity table, minimal fixes with checks, develop-mode Deliverable section, and the unprompted ethics flag all appeared as specified. The concepts were written for the trials, so the findings are design reasoning, not evidence about real players. Each trial is a single run.
 
 ## Host checks
 
 See [host-checks-2026-11-03.md](evidence/host-checks-2026-11-03.md). Summary:
 
-- Claude Code: plugin and marketplace manifests validate; the plugin loads from disk and exposes the skill. A Claude Code model session could not run because the CLI sign-in had expired, so plugin invocation and direct skill discovery in Claude Code are not yet observed.
+- Claude Code: plugin and marketplace manifests validate; the plugin loads from disk and exposes the skill. After the maintainer signed in again, a model session invoked the plugin skill, and a separate session discovered and invoked the direct skill from `.claude/skills/`.
 - Codex: native discovery from `.agents/skills/` and skill use were observed.
 - Antigravity, Cursor, Gemini CLI, GitHub Copilot, OpenCode and Cline: documented routes only ([hosts.md](hosts.md)); not exercised.
 
@@ -34,4 +38,4 @@ With the reference bundle present locally, the suite confirms no 10-word passage
 
 ## Not established
 
-Advice quality on real projects, behavior across many runs or models, a Claude Code model session using the installed plugin, user-scope installs, and hosts not listed above.
+Advice quality on real projects, behavior across many runs or models, a model session with the plugin installed through the marketplace (the session used `--plugin-dir`), three untested lens families, user-scope installs, and hosts not listed above.

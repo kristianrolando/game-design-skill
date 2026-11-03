@@ -118,6 +118,8 @@ Full, unedited trial records:
 
 - [Core loop audit of a cozy fishing concept](docs/examples/core-loop-audit-night-harbor.md) (Claude subagent), including an intake check.
 - [FTUE review of a deckbuilder prototype](docs/examples/ftue-review-ember-pact-codex.md) (Codex CLI, native skill discovery).
+- [Social design review of a co-op survival concept](docs/examples/social-review-raft-rally-claude-plugin.md) (Claude Code plugin).
+- [One-page design doc for a cozy narrative concept](docs/examples/one-page-gdd-lantern-post-claude-skill.md) (Claude Code direct skill, develop mode).
 
 ## Compatibility
 
@@ -125,7 +127,7 @@ Full, unedited trial records:
 
 | Host / component | Route | Evidence and limits |
 | --- | --- | --- |
-| ✅ **Claude Code** | Included plugin or direct skill | Manifests validate; the GitHub marketplace adds, the plugin installs and exposes the skill, and the Skills CLI copies the skill into `.claude/skills/` (CLI 2.1.287). A model session with the plugin was not observed: the CLI sign-in had expired. A Claude subagent followed the skill via explicit file reads in two trials. |
+| ✅ **Claude Code** | Included plugin or direct skill | Manifests validate; the GitHub marketplace adds, the plugin installs and exposes the skill, and the Skills CLI copies the skill into `.claude/skills/` (CLI 2.1.287). Model sessions invoked both the plugin skill and the direct skill and returned reports in the template. |
 | ✅ **Codex** | Direct skill; optional `agents/openai.yaml` metadata | Codex CLI 0.166 discovered the project-local skill and produced a report in the template. |
 | 📄 **Antigravity, Cursor, Gemini CLI, GitHub Copilot, OpenCode, Cline** | Direct skill in the [documented folders](docs/hosts.md) | Documented routes only; not exercised for this package. |
 | 📄 Other filesystem agents | Explicitly read `SKILL.md` | Portable fallback; native discovery not verified. |

@@ -35,7 +35,7 @@ The maintainer accepted these defaults on 2026-11-03 by approving phase 3.
 - [x] Whitespace check (`git diff --check` once Git exists).
 - [x] `claude plugin validate .`.
 - [x] Plugin loading without installation: `claude --plugin-dir . plugin details game-design-skill`.
-- [ ] Claude Code model session with the plugin loaded, and direct skill discovery from `.claude/skills/` in a disposable project. **Blocked**: the Claude Code CLI sign-in has expired; the maintainer must sign in again, then rerun the commands in `docs/evidence/host-checks-2026-11-03.md`.
+- [x] Claude Code model session with the plugin loaded, and direct skill discovery from `.claude/skills/` in a disposable project. Initially blocked by an expired CLI sign-in; done after the maintainer signed in. See `docs/evidence/host-checks-2026-11-03.md`.
 - [x] Live trial in Codex with native discovery from `.agents/skills/`, recorded in `docs/examples/` and `docs/evidence/`.
 
 Results and limits are recorded in [validation.md](validation.md).
@@ -55,7 +55,7 @@ Results and limits are recorded in [validation.md](validation.md).
 
 ### Still open
 
-- [ ] Claude Code model session with the plugin, and direct skill discovery from `.claude/skills/` (blocked on CLI sign-in; see phase 2).
+Nothing in this checklist. Further work (real-project trials, untested lenses, more hosts) is quality work, not publication.
 
 ### 5. Workspace
 

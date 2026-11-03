@@ -32,8 +32,10 @@ icons, a verbatim excerpt from the Night Harbor trial, and a compatibility legen
 unchanged. Rendering was checked with GitHub's markdown API plus github-markdown-css at 1024 px and 375 px in
 light and dark; the picture source switch was confirmed on the live cross-agent-handoff README.
 
-Remaining open item in docs/releasing.md: a Claude Code model session with the plugin and direct-skill
-discovery (blocked: the Claude Code CLI OAuth session expired).
+After the maintainer signed in to the Claude Code CLI, both blocked checks passed: a session with the plugin
+via --plugin-dir and a session with the direct skill in .claude/skills (examples Raft Rally and Lantern Post).
+The publication checklist has no open items. Six of nine lens families have been exercised; emotional
+direction, motivation and prototyping have not.
 
 On this machine the active gh account is EternalCloverStudio; the repository belongs to kristianrolando.
 Use `GH_TOKEN=$(gh auth token --user kristianrolando)` per command rather than switching the active account.
@@ -45,13 +47,14 @@ Nothing installed at user scope. No background writers.
 - Release workflow run 41561103985 passed checks and publish; release v0.1.0 targets 9c9c2b1.
 - Public routes: docs/evidence/public-routes-2026-11-03.md. Local host checks:
   docs/evidence/host-checks-2026-11-03.md.
-- Model trials: two Claude subagent trials and one Codex CLI trial in docs/examples.
+- Model trials: two Claude subagent trials, one Codex CLI trial, and two Claude Code CLI trials (plugin and
+  direct skill) in docs/examples.
 - Limits: single runs; trial concepts are invented; six hosts are documented routes only.
 
 ## Next
-No release work remains. When the maintainer has signed in to the Claude Code CLI again, rerun the blocked
-Claude checks and record them. Future changes start from actual Git status; a new version needs a manifest
-bump, new release notes and a new tag, never a moved tag.
+No release work remains. Suggested quality work: review a real design from the maintainer, and exercise the
+emotional direction, motivation and prototyping lenses. Future changes start from actual Git status; a new
+version needs a manifest bump, new release notes and a new tag, never a moved tag.
 
 ## Recent outcomes
 - 2026-11-03: Created game-design-skill v0.1.0 with nine lenses, tests and a recorded trial.
@@ -59,3 +62,4 @@ bump, new release notes and a new tag, never a moved tag.
 - 2026-11-03: Published the public repository; first hosted CI passed on all four jobs.
 - 2026-11-03: Verified public install routes and published release v0.1.0.
 - 2026-11-03: Redesigned the README with responsive banner artwork and a Mermaid flow (19 tests pass).
+- 2026-11-03: Claude Code plugin and direct-skill model sessions passed after re-sign-in.
